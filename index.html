@@ -18,9 +18,12 @@
     <div class="form-div" id="student-form">
       <div class="foem-one-side">
         <img src="src/img/student-removebg-preview.png" alt="" />
+        <button id="show-data">show-data</button>
       </div>
       <div class="form-styling">
         <form action="">
+          <div class="sec">
+            <div>
           <div>
             <label for="name">Student Name:</label>
           </div>
@@ -31,6 +34,8 @@
             name="name"
             required
           />
+          </div>
+          <div>
           <div>
             <label for="father-name">Father Name:</label>
           </div>
@@ -41,7 +46,24 @@
             name="father name"
             required
           />
+          </div>
+          </div>
+         
+
+          <div class="sec">
+            <div>
           <div>
+            <label for="date of birth">Date of Birth:</label>
+          </div>
+          <input
+            placeholder="enter your D-O-B"
+            type="date"
+            id="date-of-birth"
+            name="date of Birth"
+            required
+          /></div>
+          <div>
+           <div>
             <label for="age">Age:</label>
           </div>
           <input
@@ -51,7 +73,11 @@
             name="age"
             required
           />
-
+          </div>
+          </div>
+        
+          <div class="sec">
+          <div>
           <div>
             <label for="phone">Phone Number:</label>
           </div>
@@ -61,7 +87,8 @@
             id="phone"
             name="phone"
             required
-          />
+          /></div>
+          <div>
           <div>
             <label for="gender">Gender:</label>
           </div>
@@ -71,11 +98,16 @@
             id="gender"
             name="gender"
             required
-          />
-          <!-- <span class="m-f">Male</span>
-        <input name="gender" id="male" type="radio">
-         <span class="m-f">Female</span>
-        <input id="female" name="gender" type="radio"><br> -->
+          /></div></div>
+
+           <div>
+            <label for="pic">Add your pic:</label>
+          </div>
+          
+        <input type="file" id="picInput"  onchange="loadFile(event)" accept="image/*">
+<div id="pic"></div>
+         
+     
           <div class="register">
             <button class="reg-btn" id="submit">submit</button>
           </div>
